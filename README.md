@@ -60,11 +60,3 @@ Dataset II: 88.22%
 
 Performance: Outperforms existing domain adaptation and fault diagnosis baselines, demonstrating superior open-set adaptability and engineering applicability.
 
-🛠️ Repository Structure
-MFFLN-EVT/
-├── data_module/                  # Sample data and dataset preparation scripts
-├── model_module/                # Network modules (MFFLN, EVT, classifiers, discriminators)
-├── utils_module/                 # Helper functions for training, visualization, and metrics
-├── train_module             # Main training pipeline
-├── main.py            # Main program
-└── README.md              # Project documentation
