@@ -1,6 +1,8 @@
 Topic:MFFLN-EVT: A lightweight open set domain adaptive network for cross-domain unknown fault diagnosis of chillers 
+
 ABSTRACT:
 In the practical operation of chiller systems, the strong coupling among system components results in highly correlated data with complex distributions. This characteristic not only blurs the boundaries between different fault modes but also significantly increases the difficulty of identifying unknown faults. Meanwhile, existing deep learning-based diagnostic models are often characterized by large parameter sizes and complex architectures, leading to substantial computational demands that hinder their deployment on resource-constrained edge devices commonly used in chiller systems. To address the aforementioned challenges, this study proposes an Open-Set Domain Adaptation (OSDA) diagnostic framework that integrates a Multi-level Feature Fusion Lightweight Network (MFFLN) with Extreme Value Theory (EVT), aiming to enhance both the model’s generalization capability and its feasibility for deployment. The proposed method first transforms the one-dimensional sequential features of the chiller system into grayscale images to enhance spatial structural representation. Subsequently, an MFFLN is constructed to extract multi-scale features from the images, effectively capturing both local details and global structures. Through end-to-end backpropagation, the model learns discriminative features between known and unknown faults. To improve the detection of unknown classes, an EVT model is introduced to model and identify anomalous samples beyond the decision boundary. Additionally, a pseudo-label weighted adversarial training strategy is employed to optimize feature alignment between the source and target domains, thereby enhancing the classification performance of known faults. The experimental results demonstrate that the proposed method achieves average diagnostic accuracies of 88.28% and 88.22% on two chiller datasets, respectively, significantly outperforming existing comparison models. This verifies the framework’s outstanding performance and strong engineering application potential in open-set fault diagnosis tasks.
+
 Author:
 Xuejin Gaoa,c, Shouqi Wanga,c,*, Yue Liub, Huayun Hana,c, Huihui Gaoa,c, Yongsheng Qid 
 a School of Information Science and Technology, Beijing University of Technology, Beijing 100124, China
@@ -8,8 +10,3 @@ b Key Laboratory of Shallow Geothermal Energy，Ministry of Natural Resources of
 c Engineering Research Center of Digital Community, Ministry of Education，Beijing 100124, China
 d School of Electric Power, Inner Mongolia University of Technology, Hohhot, Inner Mongolia 010051, China
 
-├── data_module.py     # Data loading & splitting
-├── model_module.py    # Neural network architectures
-├── train_module.py    # Training functions
-├── utils_module.py    # Utilities and visualization
-├── main.py            # Entry script
